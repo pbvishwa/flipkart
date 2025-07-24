@@ -1,55 +1,190 @@
 .main{
-    border: 2px solid black;
-    width: 100%;
-    height: 1500px;
+    /* border: 1px solid grey; */
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    /* overflow-x: scroll; */
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bg{
+    background-color: whitesmoke;
 }
 .navbar{
     /* border: 1px solid black; */
-    width: 100%;
+    width: 1332px;
+    height: 60px;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     position:sticky;
-    top: 10px;
+    top: 0px;
+    /* top: 10px; */
+    background-color: white;
+    overflow-x:hidden ;
+}
+.searchbox{
+    width: 1332px;
+    /* appearance: none; */
+    border: none;
+    background: inherit;
+    /* overflow-x:hidden; */
 }
 #search{
+    display: flex;
+    flex-direction: row;
     width: 500px;
     height: 50px;
     background-color: aliceblue;
     color: black;
     border-radius: 5px;
     border: 1px solid aliceblue;
+    /* justify-content: ; */
+    align-items: center;
+    /* background: inherit; */
+    /* overflow-x: hidden; */
 }
-.box{
+.box1{
     /* border: 1px solid black; */
-    border-radius:5px ;
+    border-radius:5px ;  
 }
-/* #menu{
-    background-color: white;
-    color: black;
-    width: 250px;
-} */
+.box2{
+    border-radius:5px ;  
+}
+.products1:hover{
+    scale: 105%;
+}
+#menu{
+    width: 15px;
+}
+
 .ps1{
     /* width: 100%; */
     height: 150px;
     /* border: 1px solid black; */
-    background-color: beige;
+    background-color: white;
+    /* background-color: beige; */
     display: flex;
+    /* padding-top: ; */
+    margin-top: 30px;
     justify-content: space-around;
-    margin: 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-x:scroll  ;
+    gap: 30px;
     
 }
 .products{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
-.ps2b{
+.products:hover{
+    scale: 105%;
+}
+.ps2b1{
     /* border: 1px solid black; */
     margin: 10px 10px 10px;
-    background-color: beige;
+    /* background-color: beige; */
+    background-color: white;
+    /* width: 70%; */
+}
+.ads{
+    height: 190px;
+    width: 190px;
+}
+.ps2b{
+      /* border: 1px solid black; */
+      margin: 10px 10px 10px;
+      /* background-color: beige; */
+      background-color: white;
 }
 .ps2{
     display: flex;
     justify-content: space-around;
+    overflow-x: scroll;
+    gap: 30px;
     /* border: 1px solid black; */
 }
+/* .ps4-ab {
+    padding: 10px;
+    background-color: white;
+
+}
+.ps4-a{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
+.ps4 {
+    display: flex;
+    gap: 2px;
+    justify-content: space-around;
+}
+.ps42{
+    border: 1px solid grey;
+} */
+/* .flexbox{
+    width: 1332px;
+    height: 600px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 10px 10px;
+
+}
+.flexin{
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+}
+.flex1{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex1-a{
+    width: 400px;
+    height: 100px;
+    border: 1px  solid grey;
+} */
+.footer{
+    background-color: #282424;
+    height: 350px;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    display: flex;
+    justify-content:space-between;
+    width: 100vw;
+    /* gap:0px; */
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    /* margin-left:15px; */
+    column-gap: 20px;
+}
+.footer-content p{
+    color: white;
+}
+@media (max-width:450px) {
+.navbar{
+    width: 450px;
+}
+.box1{
+    display: none;
+}
+.imgnav{
+    width: 90px;
+}
+.searchbox{
+    width: 200px;
+    height: 30px;
+}
+#search{
+    width: 200px;
+    height: 30px;
+}
+}
+
